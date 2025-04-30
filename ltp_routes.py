@@ -111,3 +111,4 @@ async def websocket_ltp(websocket: WebSocket, security_id: int):
             if not active_connections[security_id]:
                 del active_connections[security_id]
         print(f"🧹 [Cleaned Up] Security ID: {security_id} | Remaining: {len(active_connections.get(security_id, set()))}")
+# end 
